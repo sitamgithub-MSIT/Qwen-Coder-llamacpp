@@ -28,8 +28,8 @@ hf_hub_download(
     local_dir="./models",
 )
 hf_hub_download(
-    repo_id="bartowski/Qwen2.5-Coder-3B-Instruct-GGUF",
-    filename="Qwen2.5-Coder-3B-Instruct-Q5_K_S.gguf",
+    repo_id="bartowski/Qwen2.5-Coder-0.5B-Instruct-GGUF",
+    filename="Qwen2.5-Coder-0.5B-Instruct-Q6_K.gguf",
     local_dir="./models",
 )
 
@@ -143,9 +143,9 @@ demo = gr.ChatInterface(
         gr.Dropdown(
             choices=[
                 "Qwen2.5-Coder-1.5B-Instruct-Q6_K.gguf",
-                "Qwen2.5-Coder-3B-Instruct-Q5_K_S.gguf",
+                "Qwen2.5-Coder-0.5B-Instruct-Q6_K.gguf",
             ],
-            value="Qwen2.5-Coder-1.5B-Instruct-Q6_K.gguf",
+            value="Qwen2.5-Coder-0.5B-Instruct-Q6_K.gguf",
             label="Model",
             info="Select the AI model to use for chat",
         ),
