@@ -136,6 +136,7 @@ def respond(
 # Create a chat interface
 demo = gr.ChatInterface(
     respond,
+    examples=[["Write a quick sort algorithm in Python."], ["What is a function in programming?"], ["Please implement A* using Python."]],
     additional_inputs_accordion=gr.Accordion(
         label="⚙️ Parameters", open=False, render=False
     ),
